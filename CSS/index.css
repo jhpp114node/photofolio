@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* END OF GLOBAL */
+
+/* =============================================== */
+/* ============HEADER ========== */
+/* =============================================== */
+.header {
+  width: 85%;
+  margin: 1rem auto;
+}
+
+.header_nav_container {
+  color: #9ae1f0;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.header_nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_nav_bar > a {
+  flex: 1;
+  font-size: 30px;
+}
+
+.header_nav_bar a:hover {
+  color: #0466c8;
+  text-decoration: underline;
+}
+
+.header_nav_bar ul {
+  display: flex;
+  justify-content: flex-end;
+  flex: 2;
+}
+
+.header_nav_bar > ul li {
+  margin-left: 2rem;
+}
+
+.header_main {
+  height: 80vh;
+  display: flex;
+}
+
+.header_main_left {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: left;
+}
+
+.header_main_left_greeting {
+  color: #0466c8;
+}
+
+.header_main_left_greeting,
+.header_main_left_name,
+.header_main_left_job_title {
+  text-transform: uppercase;
+  line-height: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.header_main_left_btns_github {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  background-color: white;
+  border: 1.5px solid #90e0ef;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 2%;
+}
+
+.header_main_left_btns_github:focus {
+  outline: none;
+}
+
+.header_main_left_btns_github:hover {
+  background-color: #90e0ef;
+  border: 1.5px solid #caf0f8;
+  cursor: pointer;
+}
+
+.header_main_right {
+  flex: 1;
+  background-image: url("../assets/images/hello_robot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header_more_container {
+  position: relative;
+}
+
+.header_more_btn {
+  position: absolute;
+  left: 50%;
+  font-size: 2rem;
+  outline: none;
+  background-color: white;
+  border: none;
+}
+
+.header_more_btn:hover {
+  cursor: pointer;
+}
