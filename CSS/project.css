@@ -14,6 +14,17 @@ a {
   text-decoration: none;
   color: black;
 }
+
+a:hover {
+  text-decoration: none;
+}
+
+.main_divider {
+  width: 30%;
+  margin: 2rem auto;
+  background-color: #03045e;
+}
+
 /* END OF GLOBAL */
 
 /* =============================================== */
@@ -62,7 +73,7 @@ a {
 
 .header_more_btn {
   position: absolute;
-  left: 50%;
+  left: 49%;
   font-size: 2rem;
   outline: none;
   background-color: white;
@@ -71,4 +82,108 @@ a {
 
 .header_more_btn:hover {
   cursor: pointer;
+}
+
+/* =========================================== */
+/* Project */
+.project_section {
+  margin: 5rem auto 0rem auto;
+  width: 85%;
+}
+
+.project_image {
+  text-align: center;
+}
+
+.project_header_image {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.project_header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: #03045e;
+  text-decoration: underline;
+}
+
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card img {
+  width: 360px;
+  height: 280px;
+  text-align: center;
+}
+
+.card_functionality {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-decoration: underline;
+}
+
+ul li::first-letter {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+/* =========================================== */
+.project_footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.project_btn {
+  outline: none;
+  text-decoration: none;
+  width: 180px;
+  height: 30px;
+  border: 2%;
+  border: none;
+  background-color: white;
+  border: 1.5px solid #90e0ef;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.project_btn a {
+  color: #19899c;
+}
+
+.project_btn:hover {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #90e0ef;
+}
+
+.project_btn a:hover {
+  color: white;
+}
+
+.project_like_btn {
+  outline: none;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.project_like_btn:hover {
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.like_count {
+  color: gray;
 }

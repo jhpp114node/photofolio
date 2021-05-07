@@ -63,7 +63,7 @@ a {
 .header_more_btn {
   position: absolute;
   left: 50%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   outline: none;
   background-color: white;
   border: none;
@@ -139,8 +139,8 @@ a {
 }
 
 .main_bottom_container div img {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
   border-radius: 2%;
   cursor: pointer;
 }
