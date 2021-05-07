@@ -300,11 +300,24 @@ a {
     background-color: gray;
     margin: 0.5rem;
   }
+
+  .main_bottom_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main_bottom_container div img {
+    width: 140px;
+    height: 140px;
+    border-radius: 2%;
+    cursor: pointer;
+  }
+
   .main_bottom_container img:hover {
     position: relative;
     top: 0;
     left: 0;
-    transform: scale(1.8);
+    transform: scale(1.2);
     cursor: pointer;
   }
 
