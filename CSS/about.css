@@ -125,7 +125,6 @@ a {
 
 .main_divider {
   margin-top: 1rem;
-  /* width: 100vw; */
   width: 100%;
   height: 5px;
   background-color: gray;
@@ -198,4 +197,211 @@ a {
 .fifthImage:hover #fifthImageCap {
   visibility: visible;
   opacity: 1;
+}
+
+/* ========================================= */
+/* ============ Media ============= */
+@media screen and (max-width: 1228px) {
+  .main_left {
+    line-height: 2rem;
+  }
+  .main_left h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #03045e;
+    font-weight: bold;
+    line-height: 5rem;
+  }
+}
+/* 959 */
+@media screen and (max-width: 959px) {
+  .main_left {
+    line-height: 2rem;
+  }
+  .main_left h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: #03045e;
+    font-weight: bold;
+    line-height: 3rem;
+    font-size: 1.3rem;
+  }
+
+  .main_left h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* 830 */
+@media screen and (max-width: 830px) {
+  .main_left {
+    line-height: 2rem;
+  }
+  .main_left h1 {
+    font-size: 1.1rem;
+  }
+
+  .main_left h2 {
+    font-size: 1rem;
+  }
+
+  .main_left p {
+    font-size: 0.8rem;
+  }
+
+  .main_right {
+    background-size: 95%;
+  }
+
+  .image_hover_caption {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 120px;
+    border: 1px solid black;
+    top: -70px;
+    right: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.1rem;
+    z-index: 1;
+  }
+}
+
+/* 680 */
+@media screen and (max-width: 680px) {
+  .main_container {
+    flex-direction: column-reverse;
+  }
+  .main_right {
+    background-size: 100%;
+  }
+  .main_left {
+    text-align: center;
+  }
+  .main_left h1 {
+    font-size: 1.1rem;
+  }
+
+  .main_left h2 {
+    font-size: 1rem;
+  }
+
+  .main_left p {
+    font-size: 0.8rem;
+  }
+
+  .main_right {
+    background-size: 100%;
+  }
+  .main_divider {
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    margin: 0.5rem;
+  }
+  .main_bottom_container img:hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1.8);
+    cursor: pointer;
+  }
+
+  .firstImage:hover #firstImageCap,
+  .secondImage:hover #secondImageCap,
+  .thirdImage:hover #thirdImageCap,
+  .fouthImage:hover #fourthImageCap,
+  .fifthImage:hover #fifthImageCap {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main_right {
+    background-size: 80%;
+  }
+  .main_left {
+    text-align: center;
+  }
+  .main_divider {
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    margin: 0.2rem;
+  }
+  .main_bottom_container img:hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1.8);
+    cursor: pointer;
+  }
+
+  .firstImage:hover #firstImageCap,
+  .secondImage:hover #secondImageCap,
+  .thirdImage:hover #thirdImageCap,
+  .fouthImage:hover #fourthImageCap,
+  .fifthImage:hover #fifthImageCap {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .header_nav_bar > ul li {
+    margin-left: 0.8rem;
+    font-size: 0.8rem;
+  }
+  .header_nav_bar > a {
+    flex: 1;
+    font-size: 30px;
+  }
+  .main_section {
+    width: 85%;
+    margin: 3rem auto 0rem auto;
+  }
+
+  .main_right {
+    background-size: 80%;
+  }
+  .main_left {
+    text-align: center;
+    flex: 0.8;
+  }
+  .main_divider {
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+    margin: 0.2rem;
+  }
+  .main_bottom_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main_bottom_container div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 2%;
+    cursor: pointer;
+  }
+
+  .main_bottom_container img:hover {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .firstImage:hover #firstImageCap,
+  .secondImage:hover #secondImageCap,
+  .thirdImage:hover #thirdImageCap,
+  .fouthImage:hover #fourthImageCap,
+  .fifthImage:hover #fifthImageCap {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
